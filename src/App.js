@@ -23,10 +23,9 @@ class App extends Component {
 
 	componentDidMount() {	
 		window.languagePluginLoader.then(() => {
+			console.log('pyodide loaded')
 			pyodide = window.pyodide;
 			console.log('Python runtime test: ' + pyodide.runPython('import sys\nsys.version'));
-			return pyodide.loadPackage('numpy');
-		}).then(() => {
 			this.setState({ loading: false });
 		}).catch((e) => {
 			this.setState({ loading: 'Failed to load. Please try again later.'});
