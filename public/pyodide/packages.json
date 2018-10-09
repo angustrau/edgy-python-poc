@@ -1,0 +1,1 @@
+{"dependencies": {"cycler": [], "matplotlib": ["cycler", "kiwisolver", "numpy", "pyparsing", "python-dateutil", "pytz"], "numpy": [], "pyparsing": [], "pytz": [], "kiwisolver": [], "pandas": ["numpy", "python-dateutil", "pytz"], "python-dateutil": []}}
